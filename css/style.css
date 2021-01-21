@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.head {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 100vw;
+	height: 8vh;
+
+	box-shadow: 0px 0px 4px 0px black;
+}
+.navbar {
+	width: 85vw;
+	height: 8vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+navblock {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.burgir {
+	position: absolute;
+	width: 80px;
+	height: auto;
+	top: 20%;
+	transform: translate(-50%, 10%);
+	cursor: pointer;
+}
+.line {
+	background: black;
+	margin: 4px;
+	width: 30px;
+	height: 3px;
+	cursor: pointer;
+}
+.shop {
+	display: flex;
+	flex-direction: row;
+	margin-left: 100px;
+	font-size: 10px;
+	cursor: pointer;
+}
+.shopblock {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 8%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 1s ease-out;
+	background-color: royalblue;
+	clip-path: inset(0% 0% 100% 0%);
+}
+.shopblock.open {
+	width: 100vw;
+	height: 100vh;
+	clip-path: inset(0% 0% 0% 0%);
+	background-color: royalblue;
+}
+.fa-angle-right {
+	margin-left: 10px;
+	font-size: 18px;
+}
+.logo h1 {
+	padding: 15px;
+	text-transform: capitalize;
+	font-size: 2rem;
+	font-family: 'Great Vibes', cursive;
+}
+.searchbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+.searchbar img,
+h4 {
+	margin: 20px;
+}
+.searchbar img {
+	width: 16px;
+	height: auto;
+	margin-right: 10px;
+}
+.searchbar h4 {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+.manubar {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	transition: all 1s ease-out;
+	clip-path: inset(0% 0% 100% 0%);
+}
+.manubar.open {
+	width: 100vw;
+	height: 100vh;
+	clip-path: inset(0% 0% 0% 0%);
+	background-color: royalblue;
+}
+.scro {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	top: 9%;
+	min-height: 100vh;
+	z-index: -1;
+}
+.scro img {
+}
+
+.text {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	transform: translate(-20%, -50%);
+	font-size: 50px;
+	color: white;
+	z-index: -1;
+}
+
+.nextpage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: gray;
+	min-height: 100vh;
+}
